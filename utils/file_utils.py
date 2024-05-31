@@ -3,10 +3,13 @@ import zipfile
 import shutil
 
 def unzip_file(zip_file_path, extract_to_directory):
-    with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-        zip_ref.extractall(extract_to_directory)
+    try:
+        with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+            zip_ref.extractall(extract_to_directory)
 
-    print("Extraction completed successfully.")
+        print("Extraction completed successfully.")
+    except Exception as e:
+        print(f"Error: {e}")
 
 #-----------------------------------------------------------------------------------------------------#
 #-----------------------------------------------------------------------------------------------------#
