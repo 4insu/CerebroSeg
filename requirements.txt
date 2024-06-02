@@ -1,6 +1,7 @@
 numpy
 pandas
 streamlit
-seaborn
 matplotlib
 torch
+opencv-python-headless<4.3
+scikit-learn==1.2.2

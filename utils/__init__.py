@@ -6,7 +6,3 @@ from .file_utils import delete_directory
 from .file_utils import rename_folder
 
 # display utils ------------------------>
-
-
-
-# model utils -------------------------->
